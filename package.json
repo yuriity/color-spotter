@@ -9,7 +9,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ionic": "ionic",
+    "io_serve": "npm run ionic serve -- --port=8102 --no-open",
+    "io_serve:prod": "npm run ionic serve -- --port=8102 --no-open --prod"
   },
   "private": true,
   "dependencies": {
@@ -42,6 +45,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "ionic": "^5.4.4",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",

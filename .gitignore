@@ -17,15 +17,24 @@ $RECYCLE.BIN/
 log.txt
 npm-debug.log*
 
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
 /.idea
 /.ionic
 /.sass-cache
 /.sourcemaps
 /.versions
-/.vscode
 /coverage
 /dist
 /node_modules
 /platforms
 /plugins
 /www
+/tmp
+/Temp
