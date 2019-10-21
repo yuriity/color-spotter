@@ -89,12 +89,12 @@ describe('ColorsStoreService', () => {
     }));
   });
 
-  describe('addFilterByColorTypeCriteria(criteria: ColorType)', () => {
+  describe('addColorTypeFilterCriteria(criteria: ColorType)', () => {
     it('should change filtered colors', fakeAsync(() => {
       const { colorsStoreService } = setup();
       colorsStoreService.setColors(COLORS);
 
-      colorsStoreService.addFilterByColorTypeCriteria('red');
+      colorsStoreService.addColorTypeFilterCriteria('red');
 
       colorsStoreService.filteredColors$.subscribe(colors => {
         expect(colors.length).toBe(1);
@@ -107,13 +107,13 @@ describe('ColorsStoreService', () => {
     }));
   });
 
-  describe('removeFilterByColorTypeCriteria(criteria: ColorType)', () => {
+  describe('removeColorTypeFilterCriteria(criteria: ColorType)', () => {
     it('should change filtered colors', fakeAsync(() => {
       const { colorsStoreService } = setup();
       colorsStoreService.setColors(COLORS);
 
-      colorsStoreService.addFilterByColorTypeCriteria('red');
-      colorsStoreService.removeFilterByColorTypeCriteria('red');
+      colorsStoreService.addColorTypeFilterCriteria('red');
+      colorsStoreService.removeColorTypeFilterCriteria('red');
 
       colorsStoreService.filteredColors$.subscribe(colors => {
         expect(colors.length).toBe(4);

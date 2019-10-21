@@ -65,7 +65,7 @@ export class ColorsStoreService {
     }
   }
 
-  addFilterByColorTypeCriteria(criteria: ColorType) {
+  addColorTypeFilterCriteria(criteria: ColorType) {
     if (!criteria) {
       return;
     }
@@ -79,7 +79,7 @@ export class ColorsStoreService {
     }
   }
 
-  removeFilterByColorTypeCriteria(criteria: ColorType) {
+  removeColorTypeFilterCriteria(criteria: ColorType) {
     if (!criteria) {
       return;
     }
